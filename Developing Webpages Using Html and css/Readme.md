@@ -9,3 +9,11 @@
     "emmet cheatsheet" - https://docs.emmet.io/cheat-sheet/
 
   emmet documentation is also there - https://docs.emmet.io/ 
+
+view Page source - 
+ Method 1:
+  Right click -> click "view page source"
+ Method 2:
+  Right click -> click "Inspect" 
+
+
