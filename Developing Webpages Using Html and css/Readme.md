@@ -16,4 +16,6 @@ view Page source -
  Method 2:
   Right click -> click "Inspect" 
 
+# install "bootstrap 5 and font awesome" extension from hansuxdev
+
 
