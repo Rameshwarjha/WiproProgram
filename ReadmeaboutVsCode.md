@@ -11,3 +11,9 @@
     "ctrl+alt+ up arrow key"
 
 * "Ctrl+D" selects the word at the cursor, or the next occurrence of the current selection.
+
+# Typescript installation
+npm install -g typescript
+
+# angular installation 
+npm install -g @angular/cli

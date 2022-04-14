@@ -1,0 +1,25 @@
+{
+  "name": "making_project_manually",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "^13.3.3",
+    "@angular/common": "^13.3.3",
+    "@angular/compiler": "^13.3.3",
+    "@angular/core": "^13.3.3",
+    "@angular/forms": "^13.3.3",
+    "@angular/platform-browser": "^13.3.3",
+    "@angular/platform-browser-dynamic": "^13.3.3",
+    "@angular/router": "^13.3.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^13.3.3"
+  }
+}
