@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Custom Validators</title>
+    </head>
+    <body>
+        <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+            
+            <div>
+                <input type="text" formControlName="email1" placeholder="Enter name">
+                <br><small style="color:red"*ngIf="!myReactiveForm.get('email1').valid && myReactiveForm.get('email1').touched">
+                    <span *ngIf="myReactiveForm.get('email1').errors['required']">Please Enter valid email</span>
+                    <span *ngIf="myReactiveForm.get('email1').errors['namenotallowed']">Please Enter valid name</span>
+
+                </small>
+            </div>
+        </form>
+    </body>
+</html>

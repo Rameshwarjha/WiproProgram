@@ -1,0 +1,50 @@
+
+<html>
+  <head>
+    <title>Demo Reactive Form</title>
+  </head>
+  <body>
+    <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+
+      <div formGroupName="userinfo">      <!-- wrapping two divs i.e, two input components of form as one formGroup with name "userinfo"-->
+
+        <div>
+          <input type="text" name="name" formControlName="username1" placeholder="Enter user name">
+          <small style="color:red" *ngIf="!myReactiveForm.get('userinfo.username1').valid && myReactiveForm.get('userinfo.username1').touched"> Please Enter valid username </small>
+          <br><br>
+
+        </div>
+
+        <div>
+          <input type="text" name="email" formControlName="email1" placeholder="Enter Email ID">
+          <small style="color:red" *ngIf="!myReactiveForm.get('userinfo.email1').valid && myReactiveForm.get('userinfo.email1').touched">Please give valid emailId</small>
+          <br><br>
+
+        </div>
+
+      </div>
+
+      <div>
+        <input type="password" name="password" formControlName="password1" placeholder="Enter Password">
+        <br><br>
+      </div>
+
+     <div formArrayName="members">    <!--  declared members formArrayName  -->
+        <ng-container *ngFor="let member of getControl(); index as i">     <!--Putting this part in container as we want to repeat it again and again so we will write logic for that in this-->
+        <input type="text" name="member" formControlName="{{i}}"  placeholder="Enter member name">
+        <br><br>
+        </ng-container>
+
+        <button (click)="addMember()">Add Member</button>
+      </div>
+
+      <button >Login</button>
+
+    </form>
+  </body>
+</html>
+
+<!-- add following in tsconfig.json  because in angular 13 lot of strict checks are there
+  so to avoid errors we need to put them false
+"strictPropertyInitialization": false,    //added for reactive forms
+"strictNullChecks": false,                // added for reactive forms -->

@@ -43,4 +43,15 @@ ex - "ng new hello-world-1"
 
 * naming convention for serivces "anynameofService.service.ts" 
 
-# declaring service in constructor to 
+# declaring service in constructor to access it anywhere in project 
+  ** always put your services in highest priority file's dependency 
+
+ * generate a service file 
+ * write your code there to provide service to other components so that they could be used anywhere 
+ * write the name in dependency of file 
+ * highest priority is of - app.module.ts "then" -> app.component.ts "then" -> any other component file
+ * so try to put in higher priority one 
+
+#  Install Angular Material
+ * ng add @angular/material
+  - after this it will ask lot of questions answer them

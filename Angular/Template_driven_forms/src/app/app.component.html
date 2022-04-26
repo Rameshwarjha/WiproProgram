@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <title>Demo T Form </title>
+</head>
+
+<body>
+  <form #loginForm="ngForm" (ngSubmit)="loginuser(loginForm.value)">
+
+    <input type="text" name="name" required #name="ngModel" pattern="[a-zA-Z]+$" placeholder="Enter name" ngModel>
+    <br>
+      <span *ngIf="name.invalid && name.touched" style="color:red"> Please Enter your name
+      </span>
+    <br>
+    <input type="password" name="password" minlength="3" required #password="ngModel" placeholder="Enter password" ngModel>
+    <br>
+    <span *ngIf="password.invalid && password.touched" style="color:red">
+      please Enter password </span>
+      <br>
+    <button [disabled]="loginForm.invalid">Login</button>
+  </form>
+</body>
+
+</html>
