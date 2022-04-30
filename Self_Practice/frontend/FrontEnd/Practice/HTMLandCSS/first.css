@@ -1,0 +1,32 @@
+/*css code*/
+body{background-color:black;}
+h1{color: aquamarine;text-align: center;}
+#main{color: pink;font-size: medium;}
+
+div{ width: 500px;color: aliceblue;}
+span{font-size: 16px;color:yellow}
+#test{color:green;}
+.com{color: red;}
+body{
+    background-color: purple;
+    background-image: url('omen.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:cover;
+    background-clip: border-box;
+}
+p{
+    color: chartreuse;
+    font-family:'Courier New';
+    font-style: italic;
+    font-size: large;
+    font-weight:bolder;
+    font-variant:small-caps ;
+    line-height: 1.5px;
+    font-stretch:normal;
+}
+ul{
+    
+    list-style-type: square;
+    list-style-position:inside;
+}

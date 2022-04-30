@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2>    JavaScript</H2>
+    <p>Greeting Message</p>
+    <p id="test"></p>
+    <script>
+        const time=new Date().getHours();
+        let msg;
+        if(time<10){
+           msg="Good Morning !";
+        }else if(time<16){
+            msg="Good Day !";
+        }
+        else{
+            msg="Good Evening !"
+        }
+        document.getElementById("test").innerHTML=msg;
+    </script>
+</body>
+</html>
